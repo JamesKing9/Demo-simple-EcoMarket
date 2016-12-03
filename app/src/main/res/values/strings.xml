@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">快写</string>
+
+    <string name="can_not_empty">你最少要购买 1 件</string>
+    <string name="product_id">传过来的商品ID是</string>
+    <string name="total_count">"购买总数为: "</string>
+    <string name="total_money">"应支付 : ¥ "</string>
+    <string name="empty_cart">购物车列表为空</string>
+
+</resources>

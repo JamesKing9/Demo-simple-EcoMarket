@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="15dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="15dp">
+    <!--
+    这个布局就是一个简单的横向控件
+    内边距： 上下 15dp, 左右 12 dp
+    -->
+    <RelativeLayout
+        android:id="@+id/rl_home_sign"
+        android:layout_width="0dip"
+        android:layout_height="60dp"
+        android:layout_weight="1">
+
+        <!--
+        android:layout_centerVertical="true"  表示当前控件在父容器的位置是垂直居中，父容器只能是相对布局
+        -->
+        <ImageView
+            android:id="@+id/iv_home_sign"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_home_sign" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_home_sign"
+            android:text="签到"
+            android:textSize="18sp" />
+
+        <!--
+        android:layout_alignParentBottom="true"  依附于父容器底部
+        -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/iv_home_sign"
+            android:text="领商币，换豪礼"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    <!--
+    华丽的分割线
+    -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_home_mall"
+        android:layout_width="0dip"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:paddingLeft="4dp">
+
+        <ImageView
+            android:id="@+id/iv_home_mall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_home_mall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_home_mall"
+            android:text="商城"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/iv_home_mall"
+            android:text="大百货，大保健"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</LinearLayout>

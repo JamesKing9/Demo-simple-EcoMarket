@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.Main_Activity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#332b3b"
+        android:gravity="center"
+        android:text="师千雅小卖铺"
+        android:textColor="#ffffff" />
+
+    <!--
+    使用 帧布局 实现了“后放入的控件在上面”的效果
+    android:layout_below="@id/title"  指定这个控件放在 title 控件下面
+    -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--
+        ListView 的一个头布局，实现了字符串动态的效果；
+
+        这里可以放一个具有筛选商品性质的设置，具体效果可以参考京东的 app
+
+        android:visibility="gone"  使该控件在默认情况下不可见
+        -->
+        <LinearLayout
+            android:id="@+id/invis"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#e5e5e5"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="商品列表" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

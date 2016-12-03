@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <!--
+    stick, 在此处的意思是预留
+    此处预留一个头布局等待实现，实现的效果是一个轮播图
+    -->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:text="这是头部，可以放一个轮播图" />
+
+</LinearLayout>
